@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will You Be Mine?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Ada sesuatu yang ingin aku tanyakan...</h1>
+    <button class="btn" onclick="showQuestion()">Lanjut</button>
+    <div id="question" class="hidden">
+      <h2 class="question-text">Maukah kamu jadi seseorang yang spesial di hidupku?</h2>
+      <div class="buttons">
+        <button class="answer yes" onclick="showMessage('yes')">Ya</button>
+        <button class="answer no" onclick="showMessage('no')">Tidak</button>
+      </div>
+    </div>
+    <div id="message" class="hidden">
+      <h2 id="response"></h2>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
